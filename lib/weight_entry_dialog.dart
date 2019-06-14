@@ -43,13 +43,11 @@ class WeightEntryDialogState extends State<WeightEntryDialog> {
       actions: [
         new FlatButton(
           onPressed: () {
-            Navigator
-                .of(context)
+            Navigator.of(context)
                 .pop(new WeightEntry(_dateTime, _weight, _note));
           },
           child: new Text('SAVE',
-              style: Theme
-                  .of(context)
+              style: Theme.of(context)
                   .textTheme
                   .subhead
                   .copyWith(color: Colors.white)),
@@ -57,7 +55,6 @@ class WeightEntryDialogState extends State<WeightEntryDialog> {
       ],
     );
   }
-
 
   @override
   void initState() {
@@ -107,14 +104,15 @@ class WeightEntryDialogState extends State<WeightEntryDialog> {
 
   _showWeightPicker(BuildContext context) {
     showDialog(
-      context: context,
-      child: new NumberPickerDialog.decimal(
-        minValue: 1,
-        maxValue: 150,
-        initialDoubleValue: _weight,
-        title: new Text("Enter your weight"),
-      ),
-    ).then((value) {
+        context: context,
+        builder: (context) {
+          return NumberPickerDialog.decimal(
+            minValue: 1,
+            maxValue: 150,
+            initialDoubleValue: _weight,
+            title: new Text("Enter your weight"),
+          );
+        }).then((value) {
       if (value != null) {
         setState(() => _weight = value);
       }

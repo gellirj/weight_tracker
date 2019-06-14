@@ -1,0 +1,15 @@
+Had to tweak some code to handle depricated API then Gradle wouldn't build so
+Upgrading Flutter projects to Gradle 4.1 and Android Studio Gradle plugin 3.0.1
+https://github.com/flutter/flutter/wiki/Upgrading-Flutter-projects-to-Gradle-4.1-and-Android-Studio-Gradle-plugin-3.0.1
+https://github.com/MSzalek-Mobile/weight_tracker
+
+Had to update pubspec.yaml to get intl library.
+Works Nicely.
+
+1 https://marcinszalek.pl/flutter/flutter-listview/
+2 https://marcinszalek.pl/flutter/flutter-fullscreendialog-tutorial-weighttracker-ii/
+3 https://marcinszalek.pl/flutter/firebase-database-flutter-weighttracker/
+4 https://marcinszalek.pl/flutter/reduxing-flutter/
+5 https://marcinszalek.pl/flutter/flutter-tabbar-example-weighttracker-5/
+6 https://marcinszalek.pl/flutter/line-chart-flutter/
+7 https://marcinszalek.pl/flutter/deleting-entry-with-undo/
